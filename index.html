@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Border Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper-bsg">
+        <div class="borderGen">
+                <div class="borderGen-preview">
+                    <div class="borderGen-preview__item" id="item"></div>
+                </div>
+
+                <div class="borderGen-settings">
+                    <div class="borderGen-property-container">
+                        <label for="thickness">Thickness</label>
+                        <input type="range"  class="border-property" min="1" max="100" value="0" id="thickness" />
+                    </div>
+                    <div class="borderGen-property-container">
+                        <label for="border-type">Border Type</label>
+                        <select class="border-property" id="border-type">
+                            <option value="solid">solid</option>
+                            <option value="dotted">dotted</option>
+                            <option value="dashed">dashed</option>
+                            <option value="double">double</option>
+                            <option value="groove">groove</option>
+                            <option value="ridge">ridge</option>
+                            <option value="inset">inset</option>
+                            <option value="outset">outset</option>
+                        </select>
+                    </div>
+                    <div class="borderGen-property-container borderGen-property-container__online">
+                        <input type="color"  class="border-property" id="border-color" />
+                        <label for="border-color">Border color</label>
+                    </div>
+                    <div class="borderGen-property-container">
+                        <label for="border-color-opacity">Border color opacity</label>
+                        <input type="range"  class="border-property" min="0" max="1" step=".1" value="1" id="border-color-opacity" />
+                    </div>
+                </div>
+
+                <div class="borderGen-result">
+                    <textarea  class="borderGen-result__css" id="result-css" rows="2"></textarea>
+                    <button class="borderGen-result__btn" id="btn-copy">Copy</button>
+                </div>
+
+                
+
+
+
+        </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
